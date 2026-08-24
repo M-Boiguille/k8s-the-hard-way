@@ -1,0 +1,26 @@
+vms:
+  - name: jump_host
+    description: "Administration host 1/512M/10G"
+    cpu: 1
+    ram: 512MiB
+    storage: 10GiB
+  - name: server
+    description: "kubernetes server"
+    cpu: 1
+    ram: 2GiB
+    storage: 20GiB
+  - name: node-0
+    description: "kubernetes worker node"
+    cpu: 1
+    ram: 2GiB
+    storage: 20GiB
+  - name: node-1
+    description: "kubernetes worker node"
+    cpu: 1
+    ram: 2GiB
+    storage: 20GiB
+os_images:
+  - name: "Debian 12 (bookworm)"
+    incus_name: "debian/12"
+    virsh_name: "debian-12-genericcloud-arm64.qcow2"
+    codename: bookworm
