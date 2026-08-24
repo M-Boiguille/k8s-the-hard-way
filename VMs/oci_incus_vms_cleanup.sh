@@ -58,4 +58,5 @@ echo "--------------------------------------------------"
 echo "✅ Nettoyage complet terminé !"
 echo ""
 incus list
+incus profile device remove default eth0
 incus network list
